@@ -36,6 +36,15 @@ void  todo :: add(){
 
 }
 
+void todo :: manual(){
+    cout<<"\n\nSelect an option\n";
+    cout<<"Enter 1 to Add\n";
+    cout<<"Enter 2 to Show\n";
+    cout<<"Enter 3 to Delete\n";
+    cout<<"Enter 4 to Exit\n";
+    check();
+}
+
 int main()
 {
 
