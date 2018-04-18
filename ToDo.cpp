@@ -62,6 +62,27 @@ void todo :: check(){
     }
 }
 
+void  todo :: show(){
+        io.open("todo.txt");
+        int i=1;
+        cout<<"\n\n";
+        while(!io.eof()){
+            getline (io,task_name);
+            getline (io,task_description);
+            getline (io,task_date);
+            if(io.eof()){
+                io.close();
+                manual();
+            }
+            cout<<i<<endl;
+            cout<<task_name<<"\t\t\t\t"<<task_date<<endl;
+            cout<<task_description<<endl;
+            i++;
+        }
+        io.close();
+        manual();
+}
+
 int main()
 {
 
