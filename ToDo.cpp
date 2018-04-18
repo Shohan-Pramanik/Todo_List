@@ -45,6 +45,23 @@ void todo :: manual(){
     check();
 }
 
+void todo :: check(){
+
+    cin>>tmp;
+    if(tmp==1){
+        add();
+    }
+    if(tmp==2){
+        show();
+    }
+    if(tmp==3){
+        delet();
+    }
+    if(tmp==4){
+        exit(1);
+    }
+}
+
 int main()
 {
 
