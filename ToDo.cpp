@@ -108,8 +108,19 @@ void todo :: delet(){
     manual();
 }
 
+void todo :: t_name(){
+    cout<<"Enter Task Name:\n";
+}
+void todo :: t_description(){
+    cout<<"Enter Task Description:\n";
+}
+void todo :: t_date(){
+    cout<<"Enter Task Date:\n";
+}
+
 int main()
 {
-
+    todo my;
+    my.show();
     return 0;
 }
