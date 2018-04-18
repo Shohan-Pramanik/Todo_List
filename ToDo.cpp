@@ -83,6 +83,31 @@ void  todo :: show(){
         manual();
 }
 
+void todo :: delet(){
+    cout<<"Which one do you want to delete?\n";
+    cin>>tmp;
+    ofstream temp;
+    io.open("todo.txt");
+    temp.open("temp.txt",ios::out);
+    int i=1;
+    while(!io.eof()){
+            getline (io,task_name);
+            getline (io,task_description);
+            getline (io,task_date);
+            if(i!=tmp && !io.eof()){
+                temp<<task_name<<endl;
+                temp<<task_description<<endl;
+                temp<<task_date<<endl;
+            }
+            i++;
+    }
+    temp.close();
+    io.close();
+    remove("todo.txt");
+    rename("temp.txt","todo.txt");
+    manual();
+}
+
 int main()
 {
 
