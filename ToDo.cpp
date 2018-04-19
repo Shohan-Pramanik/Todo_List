@@ -17,7 +17,6 @@ class todo{
         void manual();
         void check();
 };
-
 void  todo :: add(){
         io.open("todo.txt",ios::app);
         t_name();
