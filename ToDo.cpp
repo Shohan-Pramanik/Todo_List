@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace std;=
+using namespace std;
 fstream io;
 class todo{
     private:
