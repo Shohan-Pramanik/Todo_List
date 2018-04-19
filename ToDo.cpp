@@ -1,6 +1,5 @@
 #include<iostream>
-using namespace std;
-
+using namespace std;=
 fstream io;
 class todo{
     private:
@@ -18,7 +17,6 @@ class todo{
         void manual();
         void check();
 };
-
 void  todo :: add(){
         io.open("todo.txt",ios::app);
         t_name();
